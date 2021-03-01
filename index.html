@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/favicon-login.jpg" type="image/x-icon">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- container of register and login -->
+    
+    <main class="main__login-register">
+        <div class="container__login-register">
+            <!-- login -->
+
+            <div class="login">
+                <form action="" id="formLogin">
+                    <h2 class="title__login">Acceder</h2>
+                    <input id="emailLogin" type="text" name="emaillogin" placeholder="Correo" required>
+                    <span class="error__email-login">El email solo puede tener letras, puntos, guíones y guìon bajo.</span>
+                    <input id="passwordLogin" type="password" name="passwordlogin" placeholder="Contraseña" required>
+                    <span class="error__password-login">La contraseña debe tener menos de 12 dígitos</span>
+                    <div class="btn">
+                        <button type="submit">Entrar</button>
+                    </div>
+                </form>
+                <p class="p__login">¿No tienes cuenta? <a href="#" id="register">Regístrate</a></p>
+            </div>
+            <!-- register -->
+            <div class="register">
+                <form action="" id="formRegister">
+                    
+                    <h2 class="title__register">Regístrate</h2>
+                    <input id="namePassword" type="text" name="fullname" placeholder="Nombre Completo" required>
+                    <span class="error__name-register">El nombre solo puede tener letras y espacios</span>
+                    <input id="emailRegister" type="email" name="emailregister" placeholder="Correo" required>
+                    <span class="error__email-register">El email solo puede tener letras, puntos, guíones y guìon bajo.</span>
+                    <input id="passwordRegister" type="password" name="passwordregister" placeholder="Contraseña" required>
+                    <span class="error__password-register">La contraseña debe tener de 4 a 12 dígitos</span>
+                    <input id="password2Register"  type="password" name="passwordregister2" placeholder="Repetir Contraseña"required>
+                    <span class="error__password2-register">Las contraseñas no coinciden</span>    
+                    <div class="gender">
+                        <select name="gender" id="gender">
+                            <option selected="true" disabled="disabled">Género</option>
+                            <option value="F" aria-required="true">Femenino</option>
+                            <option value="M" aria-required="true">Masculino</option>
+                        </select>
+    
+                    </div>
+                    <span class="error__gender-register">debes seleccionar una opciòn</span>
+                    <div class="btn">
+                        <button type="submit" id="register">Regístrate</button>
+                    </div>
+                    <div class="post-error-form">
+                        <p class="error_submit-register">Completa todos los datos</p>
+                    </div>
+                    <div class="post-form">
+                       <p class="good-post">Se han envíado los datos exitosamente</p>
+                    </div>
+                </form>
+                <p class="p__register">¿Tienes cuenta? <a href="#" id="login">Iniciar Sesión</a></p>
+            </div>
+        </div>
+    </main>
+<!-- scripts -->
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>
