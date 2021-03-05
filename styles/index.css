@@ -12,7 +12,7 @@ body{
 
 .main__login-register{
     width: 80%;
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
     
 }
@@ -94,32 +94,34 @@ body{
     width: 100%;
 }
 
-.error__gender-register {
-    color: red;
-    display: none;
-}
+
 
 .post-form,
-.post-error-form{
+.post-error-form,
+.login-form,
+.login-error-form{
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
-.post-form{
+.post-form,
+.login-form{
     background: green;
 }
 
-.post-error-form{
+.post-error-form,
+.login-error-form{
     background: red;
 }
 
 
 
-/* error of inputs */
+/*end error of inputs */
 
 
 .login form .btn,
@@ -142,18 +144,6 @@ body{
 
 
 
-.gender {
-    width: 100%;
-    margin: 25px auto;
-}
-
-.gender select{
-    margin-left: 0;
-    padding:10px ;
-    font-size: 15px;
-    outline: none;
-}
-
 .p__login,
 .p__register{
     text-align: center;
@@ -167,7 +157,12 @@ body{
 }
 /* media query */
 
-@media (max-width: 500px){
+@media (max-width: 600px){
+    .register{
+        padding: 10px;
+        width: 200px;
+    }
+
     .login h2,
     .register h2{
         font-size: 25px;
@@ -183,10 +178,7 @@ body{
         font-size: 11px;
     }
 
-    .gender select{
-        padding: 3px;
-        font-size: 10px;
-    }
+    
 
     .p__login,
     .p__register{
