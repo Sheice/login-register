@@ -144,7 +144,7 @@ inputsRegister.forEach(input => {
 
 formRegister.addEventListener('submit', (e)=>{
     e.preventDefault()
-    if(validationOfRegister.fullName && validationOfRegister.email && validationOfRegister.password){
+    if(validationOfRegister.fullName && validationOfRegister.email && validationOfRegister.password && validationOfRegister.password2){
         document.querySelector('.post-form').style.display = 'block';
         document.querySelector('.post-error-form').style.display = 'none';
 
